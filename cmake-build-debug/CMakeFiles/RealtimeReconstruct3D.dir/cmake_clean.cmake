@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RealtimeReconstruct3D.dir/main.cpp.o"
+  "CMakeFiles/RealtimeReconstruct3D.dir/src/main.cpp.o"
   "RealtimeReconstruct3D.pdb"
   "RealtimeReconstruct3D"
 )

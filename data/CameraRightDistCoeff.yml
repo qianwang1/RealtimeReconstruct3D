@@ -1,0 +1,6 @@
+%YAML:1.0
+    CameraRightDistCoeff: !!opencv-matrix
+        rows: 5
+        cols: 1
+        dt: d
+        data: [ -0.443399, 0.238084, 0, 0, 0]

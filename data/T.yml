@@ -1,0 +1,6 @@
+%YAML:1.0
+    T: !!opencv-matrix
+        rows: 3
+        cols: 1
+        dt: d
+        data: [ -235.776054, 1.739566, -1.982503]
