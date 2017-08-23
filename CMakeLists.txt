@@ -42,6 +42,8 @@ link_libraries("/opt/pylon5/lib64/libuxapi.so")
 link_libraries("/opt/pylon5/lib64/libXmlParser_gcc_v3_0_Basler_pylon_v5_0.so")
 link_libraries("/opt/pylon5/lib64/pylon-libusb-1.0.so")
 
+
+
 set(SOURCE_FILES src/main.cpp)
 include_directories("include")
 add_executable(RealtimeReconstruct3D ${SOURCE_FILES})

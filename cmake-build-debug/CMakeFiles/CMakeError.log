@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1a0ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a0ab.dir/build.make CMakeFiles/cmTC_1a0ab.dir/build
+make[1]: Entering directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a0ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_1a0ab.dir/CheckSymbolExists.c.o   -c /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1a0ab
+/home/troll/Programs/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a0ab.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_1a0ab.dir/CheckSymbolExists.c.o  -o cmTC_1a0ab 
+CMakeFiles/cmTC_1a0ab.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1a0ab.dir/build.make:97: recipe for target 'cmTC_1a0ab' failed
+make[1]: *** [cmTC_1a0ab] Error 1
+make[1]: Leaving directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1a0ab/fast' failed
+make: *** [cmTC_1a0ab/fast] Error 2
+
+File /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2f35c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f35c.dir/build.make CMakeFiles/cmTC_2f35c.dir/build
+make[1]: Entering directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f35c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2f35c.dir/CheckFunctionExists.c.o   -c /home/troll/Programs/clion-2017.2.1/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2f35c
+/home/troll/Programs/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f35c.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2f35c.dir/CheckFunctionExists.c.o  -o cmTC_2f35c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2f35c.dir/build.make:97: recipe for target 'cmTC_2f35c' failed
+make[1]: *** [cmTC_2f35c] Error 1
+make[1]: Leaving directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2f35c/fast' failed
+make: *** [cmTC_2f35c/fast] Error 2
+
+

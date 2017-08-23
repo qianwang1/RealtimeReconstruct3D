@@ -1272,3 +1272,31 @@ make[1]: Leaving directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-bu
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17a1c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17a1c.dir/build.make CMakeFiles/cmTC_17a1c.dir/build
+make[1]: Entering directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17a1c.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_17a1c.dir/CheckIncludeFile.c.o   -c /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_17a1c
+/home/troll/Programs/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17a1c.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_17a1c.dir/CheckIncludeFile.c.o  -o cmTC_17a1c 
+make[1]: Leaving directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b850/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b850.dir/build.make CMakeFiles/cmTC_2b850.dir/build
+make[1]: Entering directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b850.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2b850.dir/CheckFunctionExists.c.o   -c /home/troll/Programs/clion-2017.2.1/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2b850
+/home/troll/Programs/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b850.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2b850.dir/CheckFunctionExists.c.o  -o cmTC_2b850 -lpthread 
+make[1]: Leaving directory '/home/troll/workspace/RealtimeReconstruct3D/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
